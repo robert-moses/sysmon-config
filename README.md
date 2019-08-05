@@ -1,4 +1,6 @@
 ﻿# Sysmon Threat Intelligence Configuration #
+Peronal fork from ion-storm
+
 See the develop Branch for more bleeding edge updates: https://github.com/ion-storm/sysmon-config/tree/develop
 
 This config is based off of the OR logic in sysmon 8.00 and 8.04, sysmon 8.02 breaks this functionality.  Also 8.00 introduced a memory leak that will consume all available memory on your system if you frequently reload the config file.  Upgrading to 8.04 is mandatory.
