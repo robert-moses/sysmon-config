@@ -1,5 +1,5 @@
 ﻿# Sysmon Threat Intelligence Configuration #
-Peronal fork from ion-storm
+[Personal fork from ion-storm]
 
 See the develop Branch for more bleeding edge updates: https://github.com/ion-storm/sysmon-config/tree/develop
 
