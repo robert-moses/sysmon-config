@@ -9,6 +9,11 @@
   Fork author:	ionstorm
   Fork project:	https://github.com/ion-storm/sysmon-config
   Fork license:	Creative Commons Attribution 4.0 | You may privatize, fork, edit, teach, publish, or deploy for commercial use - with attribution in the text.
+  
+  Fork version:	2
+  Fork author:	robert-moses
+  Fork project:	https://github.com/robert-moses/sysmon-config
+  Fork license:	Creative Commons Attribution 4.0 | You may privatize, fork, edit, teach, publish, or deploy for commercial use - with attribution in the text.
 
   REQUIRED: Sysmon version 8.00 or higher, it's recommended you stay updated.
 -->
@@ -909,6 +914,12 @@
 			<ParentImage condition="is">C:\Program Files (x86)\MaaS360\Cloud Extender\EMSAgent.exe</ParentImage>
 			<ParentImage condition="is">C:\Program Files\Octopus Deploy\Tentacle\Tentacle.exe</ParentImage>
 			<CommandLine condition="contains">chrome.nativeMessaging.out</CommandLine>
+			<!--Exclude: CUSTOM-->
+			<Image condition="is">C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender\NEService64.exe</Image>
+			<Image condition="end with">SonicWall\SSL-VPN\NetExtender\NEService64.exe</Image> 
+			<Image condition="end with">SonicWall\SSL-VPN\NetExtender\NEIdle.exe</Image>
+			<Image condition="is">C:\Users\rmoses.QUEST\AppData\Local\CounterPath\X-Lite\Current\X-Lite.exe</Image>
+			<Image condition="end with">CounterPath\X-Lite\Current\X-Lite.exe</Image>
 		</ProcessCreate>
 
 	<!--SYSMON EVENT ID 2 : FILE CREATION TIME RETROACTIVELY CHANGED IN THE FILESYSTEM [FileCreateTime]-->
@@ -1383,6 +1394,12 @@
 			<Image condition="image">g2mcomm.exe</Image> <!--GoToMeeting-->
 			<Image condition="end with">AppData\Local\Microsoft\Teams\current\Teams.exe</Image> <!--Microsoft: Teams-->
 			<DestinationPort condition="is">53</DestinationPort>   <!--DNS Lookups-->
+			<!--Exclude: CUSTOM-->
+			<Image condition="is">C:\Program Files (x86)\SonicWall\SSL-VPN\NetExtender\NEService64.exe</Image>
+			<Image condition="end with">SonicWall\SSL-VPN\NetExtender\NEService64.exe</Image> 
+			<Image condition="end with">SonicWall\SSL-VPN\NetExtender\NEIdle.exe</Image>
+			<Image condition="is">C:\Users\rmoses.QUEST\AppData\Local\CounterPath\X-Lite\Current\X-Lite.exe</Image>
+			<Image condition="end with">CounterPath\X-Lite\Current\X-Lite.exe</Image>
 		</NetworkConnect>
 	<!--SYSMON EVENT ID 4 : RESERVED FOR SYSMON STATUS MESSAGES-->
 
