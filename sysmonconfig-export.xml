@@ -3165,6 +3165,8 @@
 			<Image condition="end with">Hydrous.Host.exe</Image>
 			<Image condition="end with">TNSLSNR.exe</Image>
 			<Image condition="contains">ShoreWare Server</Image>
+			<Image condition="contains">Cylance\CylanceSvc.exe</Image><!-- Cylance service -->
+			
 		</PipeEvent>
 
 	<!--SYSMON EVENT ID 19 & 20 & 21 : WMI EVENT MONITORING [WmiEvent]-->
