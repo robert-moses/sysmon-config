@@ -2415,6 +2415,9 @@
 			<Image condition="is">C:\Windows\system32\printfilterpipelinesvc.exe</Image>
 			<Image condition="is">C:\Program Files\Microsoft\Exchange Server\V15\FIP-FS\Bin\updateservice.exe</Image>
 			<Image condition="end with">\Runtime\1.0\NodeRunner.exe</Image><!--Exchange NodeRunner-->
+			<Image condition="is">C:\Program Files\Cylance\CylanceUI.exe</Image><!--Cylance files-->
+			<Image condition="is">C:\Program Files\Cylance\Optics\CyOptics.exe</Image><!--Cylance files-->
+			<TargetFilename condition="end with">Local\Cylance\Desktop\chp.cfg</TargetFilename><!--Cylance files-->
 		</FileCreate>
 
 	<!--SYSMON EVENT ID 12 & 13 & 14 : REGISTRY MODIFICATION [RegistryEvent]-->
